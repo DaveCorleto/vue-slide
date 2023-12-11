@@ -1,6 +1,5 @@
 
-
-console.log(slides);
+const slides = []
 
 // Create app...inglobare l'array nei data 
 // Sostituisco tutti i contenuti "statici" con le proprietà dell'array.
@@ -10,8 +9,12 @@ const {createApp} = Vue;
 createApp ({
     data (){
 
+    
+
         return{ 
-            slides : [
+
+                activeImage: 0,
+                slides : [
 
                 {   image: 'img/01.webp',
                     title: 'Marvel\'s Spiderman Miles Morale',
@@ -38,6 +41,8 @@ createApp ({
         }
     },
     // fine di data 
+
+
 
 }).mount('#app');
 
